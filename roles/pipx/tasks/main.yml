@@ -1,0 +1,7 @@
+- name: Install CLI tools via pipx
+  ansible.builtin.command: >
+    pipx install {{ item }}
+  loop: "{{ pipx_cli_tools }}"
+  environment:
+    PIPX_HOME: "{{ ansible_facts['env']['HOME'] }}/.local/pipx"
+    PIPX_BIN_DIR: "{{ ansible_facts['env']['HOME'] }}/bin"

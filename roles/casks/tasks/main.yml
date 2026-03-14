@@ -1,0 +1,9 @@
+---
+- name: Install brew cask packages
+  homebrew_cask:
+    name: "{{ homebrew_cask_packages }}"
+    state: present
+  ignore_errors: yes
+
+
+    

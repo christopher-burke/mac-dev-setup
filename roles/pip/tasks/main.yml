@@ -1,0 +1,14 @@
+- name: Create a development virtual environment using venv
+  ansible.builtin.command:
+    cmd: "{{ python_executable }} -m venv {{ pip_venv_path }}"
+  args:
+    creates: "{{ pip_venv_path }}"
+
+- name: Upgrade pip in the virtual environment
+  ansible.builtin.command: "{{ pip_venv_path }}/bin/pip install --upgrade pip setuptools wheel"
+  #ansible.builtin.command: "{{ pip_venv_path }}/bin/pip install --upgrade pip"
+
+- name: Install all pip packages in the virtual environment
+  ansible.builtin.command: >
+    {{ pip_venv_path }}/bin/pip install {{ item }}
+  loop: "{{ pip_packages }}"

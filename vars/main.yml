@@ -1,0 +1,227 @@
+homebrew_packages:
+
+  # Core CLI
+  - ack
+  - ascii
+  - autojump
+  - bash-completion
+  - coreutils
+  - curl
+  - fd
+  - fdupes
+  - ffind
+  - fswatch
+  - fzf
+  - htop
+  - hyperfine
+  - jq
+  - lesspipe
+  - lynx
+  - macchina
+  - mtr
+  - ncdu
+  - nmap
+  - parallel
+  - pwgen
+  - ripgrep
+  - rsync
+  - sd
+  - shellcheck
+  - starship
+  - tmux
+  - tree
+  - watch
+  - watchman
+  - wget
+  - z
+  - zsh
+  - zsh-autosuggestions
+  - zsh-completions
+  - zsh-history-substring-search
+  - zsh-syntax-highlighting
+
+  # Development
+  - ansible
+  - autoconf
+  - automake
+  - byacc
+  - doxygen
+  - git
+  - git-delta
+  - git-lfs
+  - go
+  - hugo
+  - llvm@21
+  - node
+  - protobuf
+  - swig
+
+  # Containers / infra
+  - docker
+  - docker-compose
+  - docker-machine
+  - terraform
+  - terraform-inventory
+
+  # Cloud
+  - awscli
+
+  # Databases
+  - memcached
+  - mysql-client
+  - postgresql@18
+  - percona-toolkit
+
+  # Languages / runtimes
+  - pyenv
+  - python@3.13
+  - rbenv
+  - ruby-build
+  - lua
+
+  # Media / document
+  - ffmpeg
+  - graphicsmagick
+  - ghostscript
+  - pandoc
+  - poppler
+  - qpdf
+  - tesseract
+
+  # Networking
+  - inetutils
+  - mosh
+  - nginx
+  - unbound
+
+  # Misc tools
+  - cliclick
+  - cloc
+  - dockutil
+  - exiftool
+  - highlight
+  - jhead
+  - jpegoptim
+  - pre-commit
+  - rtmpdump
+  - ssh-copy-id
+  - yarn
+
+
+homebrew_cask_packages:
+
+  # Browsers
+  - firefox
+  - google-chrome
+  - brave-browser
+
+  # Terminal / dev
+  - iterm2
+  - vscodium
+  - sublime-text
+  - chromedriver
+  - tableplus
+  - visual-studio-code
+  - geckodriver
+
+  # Containers
+  - docker-desktop
+  - vagrant
+
+  # Communication
+  - slack
+  - discord
+  - zoom
+  - franz
+  - webex
+
+  # Productivity
+  - evernote
+  - rectangle
+  - drawio
+  - paintbrush
+
+  # Security
+  - bitwarden
+  - keepassxc
+
+  # Utilities
+  - balenaetcher
+  - karabiner-elements
+  - istat-menus
+
+  # Media
+  - vlc
+  - spotify
+  - steam
+  - mplayerx
+
+  # Development tools
+  - macvim
+  - mactex
+
+  # Benchmarks
+  - cinebench
+  - geekbench
+
+  # Fonts
+  - font-3270-nerd-font
+  - font-anonymice-nerd-font
+  - font-awesome-terminal-fonts
+  - font-caskaydia-cove-nerd-font
+  - font-cousine-nerd-font
+  - font-fira-code-nerd-font
+  - font-go-mono-nerd-font
+  - font-hack-nerd-font
+  - font-hasklug-nerd-font
+  - font-hurmit-nerd-font
+  - font-im-writing-nerd-font
+  - font-inconsolata-nerd-font
+  - font-iosevka-nerd-font
+  - font-lekton-nerd-font
+  - font-m+-nerd-font
+  - font-meslo-lg-nerd-font
+  - font-monofur-nerd-font
+  - font-monoid-nerd-font
+  - font-mononoki-nerd-font
+  - font-noto-nerd-font
+  - font-overpass-nerd-font
+  - font-profont-nerd-font
+  - font-sauce-code-pro-nerd-font
+  - font-tinos-nerd-font
+
+pyenv_python_versions:
+  - "3.14.3"
+  - "3.13.12"
+
+pip_packages:
+  - black
+  - boto3
+  - build
+  - csvkit
+  - flake8
+  - httpie
+  - ipdb
+  - ipython
+  - poetry
+  - pre-commit
+  - pygments
+  - pyyaml
+  - requests
+  - s3cmd
+  - tox
+  - twine
+  - yt-dlp
+  - wheel
+
+# Path to the virtual environment
+pip_venv_path: "~/.venvs/dev-env"
+python_executable: python3  # or a pyenv-managed python
+
+pipx_cli_tools:
+  - yt-dlp
+  - gallery-dl
+  - black
+  - flake8
+  - httpie
+  - organize-tool

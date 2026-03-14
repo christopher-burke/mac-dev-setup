@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+.ansible-venv/
+*.venv
+*.env
+
+# Pip cache
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ansible local facts
+*.retry
+
+# User-specific files
+vars/secrets.yml
